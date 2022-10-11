@@ -1,0 +1,687 @@
+:root {
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-red: #fa041d;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Thin.ttf') format('ttf'),
+    url('../fonts/Montserrat-ThinItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../fonts/Montserrat-ExtraLight.ttf') format('ttf'),
+    url('../fonts/Montserrat-ExtraLightItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Montserratx-LightItalic.ttf') format('ttf'),
+    url('../fonts/Montserrat-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('../fonts/Montserrat-MediumItalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/Montserrat-ExtraBold.ttf') format('ttf'),
+    url('../fonts/Montserrat-BoldItalic.ttf') format('ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* color: ; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Qanelas', cursive;
+}
+
+
+.nav-pills{
+  font-size: 2.2rem!important;
+}
+
+.top-box {
+  background: linear-gradient(90deg, #000, red);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.top-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.top-list i {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.top-link {
+  text-decoration: none;
+  margin-bottom: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.top-link:hover {
+  color: var(--bs-white);
+}
+
+
+
+.length-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.btn-one {
+  padding: 8px 0;
+  color: #fff;
+  border-right: 3px solid #fff;
+  border-radius: 3px;
+  width: 2px;
+  height: 25px;
+}
+
+.length-btn:focus {
+  border: none;
+}
+
+/* HEADER NAV */
+.site-header {
+  /* background-color: rgb(90, 82, 82); */
+  background-color: transparent;
+  padding-top: 10px;
+  /* padding-bottom: 10px;  */
+  /* border-bottom: 3px solid red; */
+}
+
+/* BURGER MENU */
+.custom-toggler .navbar-toggler-icon {
+  font-weight: 900;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 2.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.logo-link {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 31px;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+
+
+.logo-img img {
+  width: 200px;
+  height: 70px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #fff;
+  padding: 2px 6px;
+}
+
+.navbar-toggler-icon {
+  /* background-color: #fff; */
+  color: red;
+  font-size: 30px;
+}
+
+.navbar-toggler-icon:focus{
+  border: none;
+  box-shadow: none;
+  background-color: none;
+}
+
+.site-logo-link:active {
+  opacity: 0;
+}
+
+.sitenav-item {
+  padding-top: 15px;
+  margin: 0 31px;
+}
+
+.nav-item {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+
+.sitenav-item-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 155%;
+  text-decoration: none;
+  color: #000;
+  transition: opacity 0.4s ease, color 0.4s ease;
+
+}
+
+.sitenav-item-link:hover {
+  opacity: 0.8;
+  color: #af0202;
+  text-decoration: none;
+}
+
+.sitenav-item-link:active {
+  opacity: 0.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid red;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  white-space: nowrap;
+}
+
+.button:hover {
+  border-color: red;
+  background-color: transparent;
+  color: var(--bg-color);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nextin-banner-text {
+  width: 100%;
+  height: 500px;
+  background: url("../images/logo_nnn_1.jpg") no-repeat center center / cover;
+}
+
+.nextin-heading {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 50px;
+  color: red;
+  width: 100%;
+  
+}
+
+
+.nextin-text {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #000;
+  font-weight: 200;
+  margin-top: 60px;
+  margin-bottom: 0;
+  line-height: 50px;
+}
+
+.span {
+  text-transform: uppercase;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+
+}
+
+.cards {
+  background-color: #fff;
+}
+
+/* BLOG 2 */
+.blog-one-text {
+  text-align: center;
+  line-height: 50px;
+  margin-top: 60px;
+}
+
+.blog-span-one {
+  color: var(--bs-red);
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.blog-p-one {
+  width: 100%;
+  position: relative;
+  transform: translate(0%, 0%);
+  margin-bottom: 0;
+  color: var(--bs-black);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.blog-p-one .p-one {
+  position: absolute;
+  transform: rotateZ(-5.4deg);
+  width: 385px;
+  margin-left: -375px;
+  margin-top: 21px;
+  height: 4px;
+  background-color: var(--bs-red);
+}
+
+.blog-p-two {
+  margin-bottom: 0;
+  color: var(--bs-black);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.blog-button {
+  color: var(--bs-white);
+  background-color: var(--bs-black);
+  font-size: 16.5px;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.blog-span-two {
+  color: var(--bs-black);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/*  FORM STARTING */
+.form-border {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  position: relative;
+  padding-bottom: 50px;
+
+}
+
+.contact-heading {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-color {
+  width: 80%;
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 140px;
+  top: 95%;
+  right: 9%;
+  /* margin-top: 35.6px;
+  margin-left: 18%; */
+}
+
+
+.btn-close:focus {
+  border: none;
+  box-shadow: none;
+}
+
+
+footer {
+  background: linear-gradient(90deg, #000, red);
+
+}
+
+/*  FOOTER */
+
+.footer-phone,
+.footer-mail {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.fab {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.footer-address {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.text-black-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+
+.btn-close{
+  opacity: 1;
+}
+
+.close-but{
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+
+  .logo-img img {
+    width: 140px;
+    height: 50px;
+  }
+
+  /* .nextin-banner-text {
+    /* width: 100%;
+    height: 200px;
+    background: url("../images/logo_nnn_1.jpg") no-repeat center center / cover; 
+  } */
+
+  .nextin-heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+
+  .span {
+    text-transform: uppercase;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* IMG */
+  .blog-mid-img {
+    margin: 38px 22px 0;
+  }
+
+  /* .nextin-scroll {}
+
+  .blog-first-blog {}
+
+  .blog-first-blog img {} */
+
+  .nextin-banner-scroll {
+    margin:0;
+  } 
+
+  .nextin-text {
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 0;
+  }
+
+  .blog-p-one,
+  .blog-p-two,
+  .blog-span-two,
+  .blog-span-one {
+    margin-top: -20px;
+    font-size: 30px;
+    /* box-shadow: 2px 0 5px , rgb(158, 15, 15); */
+  }
+
+  .blog-button {
+    margin-top: 20px;
+    margin-bottom: px;
+  }
+
+  .blog-p-one .p-one {
+    position: absolute;
+    transform: rotateZ(-5.4deg);
+    width: 255px;
+    margin-left: -240px;
+    margin-top: 21px;
+    height: 3px;
+    background-color: var(--bs-red);
+  }
+
+  .btn-color {
+    width: 60%;
+    left: 20%;
+    border-radius: 50px;
+    padding: 5px;
+  }
+
+  ba .order-one {
+    order: 1;
+  }
+
+  .order-two {
+    order: 2;
+  }
+
+  .blog-one-img {
+    margin-top: 51px;
+  }
+
+}
+
+
+/*   =====КОМАНДА===== */
+.team-card{
+  margin-bottom: 30px;
+}
+.team-heading {
+  padding-bottom: 40px;
+}
+.team-heading h2{
+  color: var(--bs-black);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team-heading i{
+  font-size: 30px;
+}
+.team-heading i::after{
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--bs-black);
+  top: 0;
+}
+.team-name h4{
+  text-transform: capitalize;
+  color: rgb(33, 33, 114);
+}
+.team-name h5{
+  text-transform: uppercase;
+  color: var(--bs-red);
+} 
+.team-text::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bs-red);
+
+}
+.team-text p{
+  font-size: 13px;
+  color: #000;
+}
+
+/* .team-card .card{
+  width: 250px;
+} */
+
+
+/*======= CONTACT======= */
+.contact-heading h2{
+  color: var(--bs-black);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.contact-phone{
+  margin: 40px 0;
+}
+.fa-address-book{
+  font-size: 40px;
+}
+.fa-address-card::after{
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--bs-black);
+}
+.contact-phone .bold{
+  font-weight: 700;
+  
+}
+.contact-mail{
+  text-decoration: none;
+}
+.contact-phone a .fab{
+  color: rgb(48, 48, 172) !important;
+  padding: 0 6px;
+  
+}
+.contact-phone span, .address p{
+  color: var(--bs-black);
+  font-weight: 500;
+  font-size: 18px ;
+}
+.address p span{
+  font-weight: 700;
+  font-size: 20px;
+}
+iframe{
+ width: 100%;
+ height: 450px;
+}
+
+.offcanvas-end{
+  width: 300px;
+}
+
+/*======= CONTACT======= */
+.contact-heading h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+
+}
+
+.contact-heading {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+
+
+/* ================================================= */
+
+
+.service_texxtdwd{
+  display: flex;
+}
+
+
+
+@media (max-width:576px) {
+  .service_texxtdwd{
+    display: block;
+  }
+  .order-one{
+    order: 2;
+  }
+  .order-two{
+    order: 1;
+  }
+}
+
+
+
+/* 
+.nextin-scroll {
+  position: relative;
+  height: 300px;
+  background: center center;
+  background-size: cover;
+  background-image: url(http://www.boeing.com/resources/boeingdotcom/commercial/787/assets/images/marquee-787.jpg);
+}
+
+.blog-first-blog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1005;
+  background: rgb(0, 0, 0);
+  opacity: 1;
+} */
+
+/* .dummy {
+  height: 900px;
+} */
+
+
+
+/* 
